@@ -14,5 +14,8 @@ module TaskApp
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    
+    # タイムゾーンを日本時間に設定
+    config.time_zone = 'Asia/Tokyo'
   end
 end

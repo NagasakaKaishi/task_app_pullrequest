@@ -1,0 +1,37 @@
+<div class = "main_container">
+  <h2>スケジュール詳細</h2>
+  <table>
+  <tr>
+    <th>タイトル</th>
+    <td><%= @schedule.title %></td>
+  </tr>
+  
+  <tr>
+    <th>開始日</th>
+    <td><%= @schedule.start_date %></td>
+  </tr>
+  
+  <tr>
+    <th>終了日</th>
+    <td><%= @schedule.end_date %></td>
+  </tr>
+  
+  <tr>
+    <th>終日</th>
+        <td><%= all_day_check %></td>
+  </tr>
+  
+  <tr>
+    <th>スケジュールメモ</th>
+    <td><%= @schedule.memo %></td>
+  </tr>
+  
+  </table>
+  
+  <%= link_to "スケジュール一覧に戻る", root_path %>
+  <%= link_to "スケジュールを編集する", edit_schedule_path %>
+  <%= link_to "スケジュールを削除", '#' %>
+</div>
+
+
+

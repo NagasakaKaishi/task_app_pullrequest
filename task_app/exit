@@ -1,0 +1,23 @@
+[33mcommit 64e315014224fed91dbc8f7c778528000b9172d2[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m
+Author: EC2 Default User <ec2-user@ip-172-31-45-101.ap-southeast-1.compute.internal>
+Date:   Fri Oct 8 07:06:57 2021 +0000
+
+    initial commit
+
+[33mcommit 915a0cad240d2759cd78fd92a242114db7a360be[m
+Author: EC2 Default User <ec2-user@ip-172-31-45-101.ap-southeast-1.compute.internal>
+Date:   Fri Oct 8 05:47:42 2021 +0000
+
+    Update Gemfile for Heroku
+
+[33mcommit f2736bddc2cac88fee6ea5eb2f3f23c39e7c0f04[m
+Author: EC2 Default User <ec2-user@ip-172-31-45-101.ap-southeast-1.compute.internal>
+Date:   Fri Oct 8 02:21:09 2021 +0000
+
+    Update Gemfile for Heroku
+
+[33mcommit d22cc26f7b4c236b34980db42b3b0dcd3ffaec01[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: EC2 Default User <ec2-user@ip-172-31-45-101.ap-southeast-1.compute.internal>
+Date:   Wed Oct 6 02:25:47 2021 +0000
+
+    initial commit

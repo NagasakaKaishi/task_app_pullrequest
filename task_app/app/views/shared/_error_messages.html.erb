@@ -1,0 +1,31 @@
+<% if @schedule.errors.any? %>
+  <div>
+    <p class = "alert alert__failure">
+    スケジュールを登録できませんでした。
+    </p>
+    <ul>
+      <% if @schedule.title.empty? %>
+        <li>タイトルを入力してください</li>
+      <% end %>
+    </ul>
+    
+    <ul>
+      <% if @schedule.start_date.blank? %>
+        <li>開始日を入力してください</li>
+      <% end %>
+    </ul>
+    
+    <ul>
+      <% if @schedule.end_date.blank? %>
+        <li>終了日を入力してください</li>
+      <% end %>
+    </ul>
+    
+    <ul>
+      <% if @schedule.start_date.present? && @schedule.end_date.present? && @schedule.end_date < @schedule.start_date %>
+        <li>終了日は今日以降の日付で選択してください</li>
+      <% end %>
+    </ul>
+    
+  </div>
+<% end %>
