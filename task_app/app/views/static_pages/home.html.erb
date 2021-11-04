@@ -1,0 +1,13 @@
+<div class = "main_container">
+  <h2>スケジュール一覧</h2>
+    <% flash.each do |message_type, message| %>
+      <div class = "alert alert__<%= message_type %>">
+        <%= message %>
+      </div>
+    <% end %>
+    
+    <%= render 'schedules/schedules' %>
+    
+  <%= link_to "スケジュール新規登録", signup_path, class: "btn btn-lg btn-primary" %>
+  
+</div>

@@ -1,0 +1,10 @@
+<footer class = "footer">
+  <div class = "conteiner">
+    <% if controller.action_name == "home" %>
+    <h1>現在の日時 : <%= Date.today.to_s(:stamp) %> 　スケジュール合計 : <%= @schedules.count %></h1>
+    
+      <% else %>
+      <h1>現在の日時 : <%= Date.today.to_s(:stamp) %></h1>
+    <% end %>
+  </div>
+</footer>

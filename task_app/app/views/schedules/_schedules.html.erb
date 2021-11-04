@@ -1,0 +1,26 @@
+<table>
+      <thead>
+        <tr>
+          <th>ID</th> <th>タイトル</th> <th>開始日</th> <th>終了日</th> <th>終日</th> <th>スケジュール更新日時</th> <th>確認</th> <th>編集</th> <th>削除</th>
+        </tr>
+      </thead>
+      
+      <% if @schedules.blank? %>
+      <tbody>
+        <tr>
+          <td colspan="9">現在登録しているスケジュールはありません</td>
+        </tr>
+      </tbody>
+        <% else %>
+          <% @schedules.each do |schedule| %>
+            <tbody>
+              <tr>
+                <td><%= schedule.id %></td> <td><%= schedule.title %></td> <td><%= schedule.start_date.to_s(:stamp) %></td> <td><%= schedule.end_date.to_s(:stamp) %></td>
+                <td><%= schedule.all_day == true ? "◯" : "" %></td> <td><%= schedule.updated_at.to_s(:stamp) %></td>
+                <td><%= link_to "確認", schedule_path(schedule) %></td> <td><%= link_to "編集", edit_schedule_path(schedule) %></td>
+                <td><%= link_to "削除", schedule, method: :delete,data: {confirm: "本当に削除しますか？"} %></td>
+              </tr>
+            </tbody>
+          <% end %>
+      <% end %>
+    </table>
